@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_smallest_space"
+            android:layout_marginBottom="@dimen/default_smallest_space"
+            android:indeterminate="true"
+            app:indicatorColor="?attr/colorSecondaryVariant"
+            app:layout_constraintTop_toTopOf="parent"
+            app:trackColor="?attr/colorOnSecondary" />
+
+        <ImageView
+            android:id="@+id/imv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/single_comic_screen_cover_image_height"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imv_main"
+            android:layout_width="@dimen/single_comic_screen_main_image_width"
+            android:layout_height="@dimen/single_comic_screen_main_image_height"
+            android:layout_marginStart="@dimen/default_wide_space"
+            android:layout_marginTop="@dimen/single_comic_screen_main_image_margin_top"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_imv_cover"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/imv_cover"
+            app:layout_constraintEnd_toEndOf="@+id/imv_cover"
+            app:layout_constraintStart_toStartOf="@+id/imv_cover"
+            app:layout_constraintTop_toTopOf="@+id/imv_cover"
+            app:shimmer_auto_start="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/loading"
+                android:textAlignment="center" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_imv_main"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/imv_main"
+            app:layout_constraintEnd_toEndOf="@+id/imv_main"
+            app:layout_constraintStart_toStartOf="@+id/imv_main"
+            app:layout_constraintTop_toTopOf="@+id/imv_main"
+            app:shimmer_auto_start="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/loading"
+                android:textAlignment="center" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_medium_space"
+            android:layout_marginTop="@dimen/default_medium_space"
+            android:layout_marginEnd="@dimen/default_medium_space"
+            android:textAlignment="viewStart"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imv_main"
+            app:layout_constraintTop_toBottomOf="@+id/imv_cover"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/default_medium_space"
+            android:layout_marginTop="@dimen/default_medium_space"
+            android:layout_marginEnd="@dimen/default_medium_space"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imv_main"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            tools:text="Description DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription" />
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_medium_space"
+            android:layout_marginEnd="@dimen/default_medium_space"
+            android:background="@color/close_button_bg"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_smallest_space">8dp</dimen>
+    <dimen name="single_comic_screen_cover_image_height">200dp</dimen>
+    <dimen name="single_comic_screen_main_image_width">130dp</dimen>
+    <dimen name="single_comic_screen_main_image_height">200dp</dimen>
+    <dimen name="default_wide_space">24dp</dimen>
+    <dimen name="single_comic_screen_main_image_margin_top">100dp</dimen>
+    <dimen name="default_medium_space">16dp</dimen>
+    <dimen name="comic_list_item_main_image_width">165dp</dimen>
+    <dimen name="comic_list_item_main_image_height">250dp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="header_logo_width">100dp</dimen>
+    <dimen name="header_logo_height">25dp</dimen>
+    <dimen name="header_logo_margin">5dp</dimen>
+    <dimen name="refresh_button_elevation">5dp</dimen>
+</resources>
