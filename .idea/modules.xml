@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DmedAndroiAssignment.iml" filepath="$PROJECT_DIR$/.idea/modules/DmedAndroiAssignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DmedAndroiAssignment.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DmedAndroiAssignment.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/DmedAndroiAssignment.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/DmedAndroiAssignment.data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/DmedAndroiAssignment.domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/DmedAndroiAssignment.domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/view/DmedAndroiAssignment.view.iml" filepath="$PROJECT_DIR$/.idea/modules/view/DmedAndroiAssignment.view.iml" />
+    </modules>
+  </component>
+</project>

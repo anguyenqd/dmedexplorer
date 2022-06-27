@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.logcat:logcat:0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0d5db2b2a9f3a6049ca653980700aee0/transformed/logcat-0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0d5db2b2a9f3a6049ca653980700aee0/transformed/logcat-0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0d5db2b2a9f3a6049ca653980700aee0/transformed/logcat-0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.logcat/logcat/0.1/fb944319a54ec2ef3ccaca078254f7bff3d385a6/logcat-0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.logcat/logcat/0.1/4782bdb5a7a4d0114a801df1b115d381d959b74d/logcat-0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
