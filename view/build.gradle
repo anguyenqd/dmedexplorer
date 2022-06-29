@@ -49,12 +49,9 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version"
     implementation "com.tinder.statemachine:statemachine:$state_machine_version"
     implementation "com.squareup.picasso:picasso:$picasso_version"
-    implementation "androidx.swiperefreshlayout:swiperefreshlayout:$swipe_to_refresh_version"
     implementation "androidx.fragment:fragment-ktx:$fragment_version"
     implementation "androidx.paging:paging-runtime-ktx:$paging_version"
     implementation "com.tinder.statemachine:statemachine:$state_machine_version"
-    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
-    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
     implementation "jp.wasabeef:picasso-transformations:$picasso_transformations_version"
     implementation "com.facebook.shimmer:shimmer:$shimmer_version"
 

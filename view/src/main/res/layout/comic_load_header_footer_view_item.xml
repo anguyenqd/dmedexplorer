@@ -12,7 +12,7 @@
         android:layout_gravity="center"
         android:textAlignment="center"
         android:text="@string/error_text"
-        android:textColor="?android:textColorPrimary"
+        android:textColor="?attr/colorSecondary"
         tools:text="Timeout" />
 
     <ProgressBar
@@ -27,5 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        android:textColor="?attr/colorOnSurface"
         android:text="@string/retry" />
 </LinearLayout>
